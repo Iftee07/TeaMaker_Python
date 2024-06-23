@@ -1,0 +1,127 @@
+"""
+Message for the user
+Please try every possible things you can do with this program, 
+there are various customizations for different choices
+"""
+
+def main():
+#intro message
+    print("Welcome!! Here you can ask for a variety of tea.")
+    print("We can provide different kinds of tea based on your taste preference")
+    
+#Tea leaf type and user input
+    print("Here are our available tea leaves and herbs:\n 1) Black tea leaves\n 2) Green tea leaves\n 3) Royal bengal tea leaves\n 4) Jasmine flower\n 5) Fruit peels")
+    print("Don't worry if you don't have anything specific in mind, choose *Special* option, press S for this")
+    tea_leaf = input("Enter the consequent number or the special choice: ")
+
+#if statement for Black tea leaves
+    if tea_leaf=='1':
+        extra_ingred = input("Would you like to add anything else, press Y/N for yes or no:")
+        #asks for additional ingredients
+        if extra_ingred == 'Y':
+            #asks for add on options selection
+            print("Here are some more add on options:\n1)Honey\n2)Sugar\n3)Milk\n4)Citrus juice\n5)Mint")
+            add_on = int(input("To choose your preferred add on, press the relevant number: "))
+            if add_on ==1 :
+                print("Here is your freshly brewed Black Tea with honey")
+            if add_on ==2 :
+                print("Here is your freshly brewed Black Tea with sugar")
+            #milk yes or no
+            if add_on ==3 :
+                print("Actually milk isn't a good add on for this tea. Would you still try it?")
+                yes_no_for_milk = input("Press Y or N for yes or no: ")
+                if yes_no_for_milk == 'Y':
+                    print("Alright, here is your milked black tea")
+                else:
+                    print("Good choice! Here is your freshly brewed black tea")
+            if add_on ==4 :
+                print("Here is your freshly brewed Black Tea flavored with citrus")
+            if add_on ==5 :
+                print("Here is your freshly brewed Black Tea with mint freshness")
+        else:
+            print("Here is your freshly brewed Black Tea")
+
+#if statement for Green tea leaves
+    if tea_leaf=='2':
+        extra_ingred = input("Would you like to add anything else, press Y/N for yes or no:")
+        #asks for additional ingredients
+        if extra_ingred == 'Y':
+            #asks for add on options selection
+            print("Here are some more add on options:\n1)Honey\n2)Sugar\n3)Milk\n4)Citrus juice\n5)Mint")
+            add_on = int(input("To choose your preferred add on, press the relevant number: "))
+            if add_on ==1 :
+                print("Here is your freshly brewed Green Tea with honey")
+            if add_on ==2 :
+                print("Here is your freshly brewed Green Tea with sugar")
+            #milk yes or no
+            if add_on ==3 :
+                print("Actually milk isn't a good add on for this tea. Would you still try it?")
+                yes_no_for_milk = input("Press Y or N for yes or no: ")
+                if yes_no_for_milk == 'Y':
+                    print("Alright, here is your milked Green tea")
+                else:
+                    print("Good choice! Here is your freshly brewed Green tea")
+            if add_on ==4 :
+                print("Here is your freshly brewed Green Tea flavored with citrus")
+            if add_on ==5 :
+                print("Here is your freshly brewed Green Tea with mint freshness")
+        else:
+            print("Here is your freshly brewed Green Tea")
+
+#if statement for Royal Bengal tea leaves
+    if tea_leaf=='3':
+        extra_ingred = input("Would you like to add anything else, press Y/N for yes or no:")
+        print("SPECIAL RECOMMENDATION\nTry our best selling Milk Tea")
+        #asks for additional ingredients
+        if extra_ingred == 'Y':
+            #asks for add on options selection
+            print("Here are some more add on options:\n1)Honey\n2)Sugar\n3)Milk\n4)Citrus juice\n5)Mint")
+            add_on = int(input("To choose your preferred add on, press the relevant number: "))
+            if add_on ==1 :
+                print("Here is your freshly brewed Liqour Tea with honey")
+            if add_on ==2 :
+                print("Here is your freshly brewed Liqour Tea with sugar")
+            if add_on ==3 :
+                print("Thanks for trusting in our recommendation, Here is you Milk Tea")
+            if add_on ==4 :
+                print("Here is your freshly brewed Lemon Tea")
+            if add_on ==5 :
+                print("Here is your freshly brewed Liqour Tea with mint freshness")
+        else:
+            print("Here is your freshly brewed Liqour Tea")
+
+#Jasmine tea:
+    if tea_leaf == '4':
+        print("Here is you refreshing Jasmine Tea")
+
+#if statement for Fruit Tea
+    if tea_leaf=='5':
+        extra_ingred = input("Would you like to add anything else, press Y/N for yes or no:")
+        #asks for additional ingredients
+        if extra_ingred == 'Y':
+            #asks for add on options selection
+            print("Here are some more add on options:\n1)Honey\n2)Sugar\n3)Citrus juice\n4)Mint\n5)Fruit Mix")
+            add_on = int(input("To choose your preferred add on, press the relevant number: "))
+            if add_on ==1 :
+                print("Here is your freshly brewed Fruit Tea with honey")
+            if add_on ==2 :
+                print("Here is your freshly brewed Fruit Tea with sugar")
+            if add_on ==3 :
+                print("Here is your freshly brewed Fruit Tea flavored with citrus")
+            if add_on ==4 :
+                print("Here is your freshly brewed Fruit Tea with mint freshness")
+            if add_on == 5:
+                print("Here is your Fruit Tea and Fruit Salad")
+        else:
+            print("Here is your freshly brewed Fruit Tea")
+    
+    if tea_leaf == 'S':
+        print("Leave it to use, it will surely be tasty!")
+        print("..")
+        print("..")
+        print("..")
+        print("..")
+        print("..")
+        print("Here is your special tea, made with royal bengal tea leaves with honey, citrus")
+if __name__ == "__main__":
+    main()
