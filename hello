@@ -90,7 +90,7 @@ def main():
         else:
             print("Here is your freshly brewed Liqour Tea")
 
-#Jasmine tea:
+#Jane tea:
     if tea_leaf == '4':
         print("Here is you refreshing Jasmine Tea")
 
